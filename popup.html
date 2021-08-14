@@ -10,7 +10,12 @@
 
 <body style="min-width: 600px">
 	<div id="app">
-		<el-button v-loading.fullscreen.lock="loading" @click="refresh">刷新</el-button>
+		<div style="text-align: right;">
+			<el-button v-loading.fullscreen.lock="loading" 
+				@click="refresh"
+				style="border: 0;"
+				icon="el-icon-refresh"></el-button>
+		</div>
 		<el-table :data="tableData">
 			<el-table-column prop="name" label="名字"></el-table-column>
 			<el-table-column prop="price" label="价格"></el-table-column>
@@ -20,7 +25,7 @@
 			<el-table-column prop="low" label="最低"></el-table-column>
 			<el-table-column prop="percent" label="幅度"></el-table-column>
 			<el-table-column prop="amount" label="成交额"></el-table-column>
-			<el-table-column prop="time" label="时间"></el-table-column>
+			<!-- <el-table-column prop="time" label="时间"></el-table-column> -->
 		</el-table>
 	</div>
 	<script src="https://unpkg.com/vue/dist/vue.js"></script>

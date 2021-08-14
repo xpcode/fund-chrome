@@ -1,4 +1,11 @@
 .el-table .cell {
   padding-right: 5px;
   padding-left: 5px;
+  font-size: 13px;
+  text-align: right;
+  white-space: nowrap;
+}
+.el-table td,
+.el-table th {
+  padding: 8px 0;
 }
