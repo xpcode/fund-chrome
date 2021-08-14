@@ -5,18 +5,22 @@
 	<meta charset="utf-8" />
 	<title>发财</title>
 	<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+	<link rel="stylesheet" href="css/theme.css">
 </head>
 
-<body style="min-width: 500px">
+<body style="min-width: 600px">
 	<div id="app">
 		<el-button v-loading.fullscreen.lock="loading" @click="refresh">刷新</el-button>
 		<el-table :data="tableData">
-			<el-table-column prop="code" label="code">
-			</el-table-column>
-			<el-table-column prop="name" label="name">
-			</el-table-column>
-			<el-table-column prop="price" label="price">
-			</el-table-column>
+			<el-table-column prop="name" label="名字"></el-table-column>
+			<el-table-column prop="price" label="价格"></el-table-column>
+			<el-table-column prop="open" label="今开"></el-table-column>
+			<el-table-column prop="yestclose" label="昨收"></el-table-column>
+			<el-table-column prop="high" label="最高"></el-table-column>
+			<el-table-column prop="low" label="最低"></el-table-column>
+			<el-table-column prop="percent" label="幅度"></el-table-column>
+			<el-table-column prop="amount" label="成交额"></el-table-column>
+			<el-table-column prop="time" label="时间"></el-table-column>
 		</el-table>
 	</div>
 	<script src="https://unpkg.com/vue/dist/vue.js"></script>

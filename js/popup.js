@@ -8,7 +8,7 @@
   },
   methods: {
     query() {
-      const codes = ['sh000001', 'sz399001', 'sz399006']
+      const codes = ['sh000001', 'sz399001', 'sz399006', 'sh603986']
       const url = `https://hq.sinajs.cn/list=${codes.join(',')}`
 
       return fetch(url)
